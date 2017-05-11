@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "chats": {
+        ".read": "auth !== null",
+            
+        "$message_id": {
+            ".write": "auth !== null"
+            //&& newData.child('email').val() === root.child('/users/' + auth.uid + '/email').val()"
+        }
+    }
+  }
+}
